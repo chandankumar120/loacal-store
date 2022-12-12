@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>E-store | Login</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="./fb.png" alt=""></a>
+                <a href="#"><img src="./tw.png" alt=""></a>
+                <a href="#"><img src="./gp.png" alt=""></a>
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" name="username" class="input-field" placeholder="username" required>  
+                <input type="password" name="password" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" name="remember-me" class="checkbox"><span>remember me</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" name="username" class="input-field" placeholder="username" required> 
+                <input type="email" name="email" class="input-field" placeholder="email" required>  
+                <input type="password" name="password" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" name="remember-me"  class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

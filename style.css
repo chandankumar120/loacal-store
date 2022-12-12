@@ -1,0 +1,202 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: grey;
+    width:100vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    align-items: space-around;
+    position:relative;
+}
+.navbar-left{
+    display:block;
+    /* border:1px solid yellow; */
+    display:flex;
+    justify-content: right;
+}
+.logo{
+    /* border:1px solid blue; */
+    background-size: cover;
+    background-position: center;
+    width:auto;
+    background-repeat: no-repeat;
+    height:50px;
+}
+.navbar-left input{
+    outline:none;
+    font-size: 1.5rem;
+}
+.navbar-right{
+    position: relative;
+    /* border:1px solid blue; */
+}
+
+.navbar-right ul{
+    list-style-type: none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: space-between;
+}
+.navbar-right ul li{
+    margin:0px 2px;
+    padding:16px;
+}
+.navbar-right ul li:first-child{
+    margin-left:calc(10vw + 10px);
+}
+.navbar-right ul li a{
+    font-size:calc(0.5vw + 0.6rem);
+    color:white;
+}
+.navbar-right ul li:hover{
+    background-color: #ff105f;
+    
+}
+.navbar-right ul li a:hover{
+    color:black;
+}
+.navbar-right ul li a:hover .down-arrow{
+    filter:invert(100%)
+}
+
+.navbar-right .products-container{
+    display:none;
+    position:absolute;
+    top:53px;
+    background:  #ec5f8e;
+    margin-left:-15px;
+}
+.navbar-right .products-container ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+.navbar-right .products-container ul li{
+    margin:0px;
+} 
+.navbar-right .products-container ul li a{
+    margin:0px;
+}
+.navbar-right ul .products:hover .products-container{
+    display:block;
+}
+.products-container ul li:hover{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+.navbar::after{
+    position: absolute;
+    content:"";
+    left:0;
+    top:0;
+    height:700px;
+    width:100vw;
+    z-index:-5;
+    transform-origin: top left;
+    transform: skewY(-4deg);
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    
+}
+.show{
+    display:block;
+}
+.down-arrow{
+    width:15px;
+    height:18px;
+}
+
+/* section 1 */
+.section1{
+    height:700px;
+}
+/* section 1 */
+/* section 2 */
+.section2 .container {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .section2 .container .items {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 2.5px solid black;
+    border-radius: 12px;
+  }
+  .section2 .container .items .name {
+    text-align: center;
+    background-color: rgb(240, 197, 6);
+    height: 25px;
+    padding-top: 4px;
+    color: white;
+    margin: 0;
+  }
+  .section2 .container .items .price {
+    float: left;
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+    color: rgb(255, 0, 0);
+    font-weight: 650;
+  }
+  .section2 .container .items .info {
+    padding-left: 10px;
+    color: rgb(243, 168, 7);
+  }
+  .section2 .container .items .img img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    transition-duration: 0.8s;
+  }
+  .section2 .container .items .img {
+    overflow: hidden;
+    margin: 0;
+  }
+  .section2 .container .items:hover .img img {
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+    border-radius: 12px;
+  }
+/* section 2 */
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .navbar-left{
+        display:flex;
+        flex-direction: column;
+        
+    }
+     .navbar-right{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+}
+@media only screen and (max-width:505px){
+    .navbar-right ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-right ul li:first-child{
+        margin-left:16px;
+    }
+}

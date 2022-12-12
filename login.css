@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body::after{
+    content:"";
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0,0.4)),
+    url(./BG-HOME.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    filter:blur(2px);
+    z-index:-5;
+}
+.hero {
+    height: 100%;
+    width: 100%;
+}
+.form-box {
+  width: calc(100px + 40vw);
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+.button-box {
+  width: 50%;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+  display: flex;
+  
+}
+.toggle-btn {
+  padding: 15px;
+  width:50%;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  font-size: calc(.4rem + .6vw);
+  border-radius: 30px;
+  text-align: center;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 30px;
+}
+.social-icons {
+  margin: 30px auto;
+  width:50%;
+  text-align: center;
+}
+.social-icons img {
+  width: 30px;
+  margin: 0 12px;
+  box-shadow:0 0 20px 0 #7f7f7f3d;
+  cursor:pointer;
+  border-radius: 50%;
+}
+.input-group{
+    position: absolute;
+    top:180px;
+    width:90%;
+    transform: .5s;
+    padding:16px;
+}
+.input-field{
+    width:90%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+    display: block;
+}
+.submit-btn{
+    width:50%;
+    padding:10px 10px;
+    cursor:pointer;
+    display:block;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border:none;
+    outline: none;
+    border-radius:30px;
+    display: block;
+
+}
+.checkbox{
+    margin:30px 10px 30px 0;
+}
+span{
+    color:#777;
+    font-size: 12px;
+    bottom: 82px;
+    position: absolute;
+}
+#login{
+    left:10%;
+}
+#register{
+    left:100%;
+}
