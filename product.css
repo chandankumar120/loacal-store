@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background: #d07d1e;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+input {
+  outline: none;
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 8px;
+  margin: 8px auto;
+  width: 350px;
+  font-size: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  padding: 8px;
+  margin: 8px auto;
+  width: 67.5%;
+  font-size: 20px;
+}
+.select-item {
+  width: 100%;
+  margin: 8px auto;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+}
+option,
+optgroup {
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+}
