@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./product.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+        <h1>Add new Product</h1>
+      <form action="submit">
+        <input
+          type="text"
+          placeholder="item-brand-name"
+          class="item-brand-name"
+        />
+        <select name="item-type" id="item-type" class="select-item" required>
+          <option>Choose-Item</option>
+          <optgroup label="grocery">
+            <option value="daily-consuming">grocery</option>
+          </optgroup>
+          <!-- <optgroup label="fashion">
+            <option value="kids">kids</option>
+            <option value="men">men</option>
+            <option value="women">women</option>
+          </optgroup> -->
+          <optgroup label="milk-products">
+            <option value="milk">milk</option>
+            <option value="ghee">ghee</option>
+            <option value="butter">butter</option>
+            <option value="cheese">cheese</option>
+          </optgroup>
+          <option value="other" id="other">other</option>
+        </select>
+        <input
+          type="text"
+          placeholder="price per item"
+          class="price-per-item"
+          required
+        />
+        <input type="text" placeholder="item-quantity" class="item-quantity" />
+        <input
+          type="button"
+          class="calculate-total-price"
+          onclick="calculatePrice()"
+          value="total-price"
+          required
+        />
+        <input type="text" class="total-price" />
+        <input type="submit" value="Confirm" />
+      </form>
+    </div>
+    <script src="./product.js"></script>
+  </body>
+</html>
