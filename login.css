@@ -23,8 +23,8 @@ body::after{
     width: 100%;
 }
 .form-box {
-  width: calc(100px + 40vw);
-  height: 480px;
+  width: 40vw;
+  height: 600px;
   position: relative;
   margin: 6% auto;
   background: #fff;
