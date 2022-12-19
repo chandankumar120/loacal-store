@@ -7,8 +7,17 @@ function createBlock(classname, cotent) {
   return div;
 }
 
+function inputBlock() {
+  let input = document.createElement("input");
+  input.setAttribute("class", "cart");
+  input.setAttribute("type", "button");
+  input.setAttribute("value", "Add to Cart");
+  input.setAttribute("onClick", "alert()");
+  return input;
+}
+
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "Database.php", true);
+ajax.open("GET", "ItemsRetrieve.php", true);
 ajax.send();
 
 ajax.onreadystatechange = function () {
@@ -21,7 +30,6 @@ ajax.onreadystatechange = function () {
       var lastName = data[a].price;
       var jobTitle = data[a].info;
 
-      // function addOuter() {
       let outerelement = document.createElement("div");
       outerelement.setAttribute("class", "items");
       document.querySelector(".container").appendChild(outerelement);
@@ -30,7 +38,7 @@ ajax.onreadystatechange = function () {
       outerelement.appendChild(createBlock("name", firstName));
       outerelement.appendChild(createBlock("price", lastName));
       outerelement.appendChild(createBlock("info", jobTitle));
-      // }
+      outerelement.appendChild(inputBlock());
     }
   }
 };
