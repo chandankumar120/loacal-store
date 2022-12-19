@@ -25,7 +25,6 @@
         <li><a href="#">home</a></li>
         <li class="products"><a href="#section2">products </a>
         </li>
-        <li><a href="./login.html">login</a></li>
         <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> location</a></li>
         <li><a href="#"><i class="fa-solid fa-phone"></i> contact us</a></li>
       </ul>
