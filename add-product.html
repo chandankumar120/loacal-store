@@ -13,42 +13,43 @@
       <form action="submit">
         <input
           type="text"
-          placeholder="item-brand-name"
+          placeholder="Item Name"
           class="item-brand-name"
         />
         <select name="item-type" id="item-type" class="select-item" required>
-          <option>Choose-Item</option>
-          <optgroup label="grocery">
+          <option>Category</option>
+          <!-- <optgroup label="grocery">
             <option value="daily-consuming">grocery</option>
-          </optgroup>
+          </optgroup> -->
           <!-- <optgroup label="fashion">
             <option value="kids">kids</option>
             <option value="men">men</option>
             <option value="women">women</option>
           </optgroup> -->
-          <optgroup label="milk-products">
+          <!-- <optgroup label="milk-products">
             <option value="milk">milk</option>
             <option value="ghee">ghee</option>
             <option value="butter">butter</option>
             <option value="cheese">cheese</option>
-          </optgroup>
-          <option value="other" id="other">other</option>
+          </optgroup> -->
+          <option value="other" id="other">Other</option>
+          <option value="other" id="other">Grocery</option>
         </select>
         <input
           type="text"
-          placeholder="price per item"
+          placeholder="Price/Item"
           class="price-per-item"
           required
         />
-        <input type="text" placeholder="item-quantity" class="item-quantity" />
-        <input
+        <input type="text" placeholder="Quantity" class="item-quantity" />
+        <!-- <input
           type="button"
           class="calculate-total-price"
           onclick="calculatePrice()"
           value="total-price"
           required
-        />
-        <input type="text" class="total-price" />
+        /> -->
+        <input type="text" class="total-price" placeholder="Discription"/>
         <input type="submit" value="Confirm" />
       </form>
     </div>
