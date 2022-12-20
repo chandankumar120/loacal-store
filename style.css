@@ -162,7 +162,7 @@
 .section2 {
   width: 80%;
   margin: 500px auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .section2 .container {
   display: flex;
